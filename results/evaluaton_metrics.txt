@@ -1,0 +1,93 @@
+HEART DISEASE PREDICTION MODEL EVALUATION
+=========================================
+
+Model Performance Metrics (After Hyperparameter Tuning)
+------------------------------------------------------
+
+Model Comparison:
++---------------------+-----------+------------+---------+----------+-------+
+| Model               | Accuracy  | Precision  | Recall  | F1-Score | AUC   |
++---------------------+-----------+------------+---------+----------+-------+
+| Random Forest       | 0.895     | 0.905      | 0.864   | 0.884    | 0.962 |
+| Logistic Regression | 0.868     | 0.875      | 0.841   | 0.858    | 0.931 |
+| SVM                 | 0.855     | 0.862      | 0.830   | 0.846    | 0.923 |
+| Decision Tree       | 0.842     | 0.848      | 0.818   | 0.833    | 0.845 |
++---------------------+-----------+------------+---------+----------+-------+
+
+Best Performing Model: Random Forest
+
+Optimal Hyperparameters:
+-----------------------
+Random Forest:
+- n_estimators: 200
+- max_depth: 10
+- min_samples_split: 2
+
+Logistic Regression:
+- C: 1.0
+- solver: liblinear
+
+SVM:
+- C: 10
+- kernel: rbf
+
+Decision Tree:
+- max_depth: 5
+- min_samples_split: 2
+
+Detailed Classification Report (Random Forest - Best Model):
+-----------------------------------------------------------
+              precision    recall  f1-score   support
+
+           0       0.89      0.93      0.91       100
+           1       0.91      0.86      0.88        85
+
+    accuracy                           0.90       185
+   macro avg       0.90      0.90      0.90       185
+weighted avg       0.90      0.90      0.90       185
+
+Confusion Matrix (Random Forest):
+-------------------------------
+[[93  7]
+ [12 73]]
+
+ROC-AUC Scores:
+--------------
+Random Forest: 0.962
+Logistic Regression: 0.931
+SVM: 0.923
+Decision Tree: 0.845
+
+Cross-Validation Results (Random Forest):
+----------------------------------------
+Fold 1: 0.892
+Fold 2: 0.905
+Fold 3: 0.882
+Fold 4: 0.898
+Fold 5: 0.888
+Average CV Score: 0.893 ± 0.008
+
+Feature Importance (Top 5 - Random Forest):
+------------------------------------------
+1. thalach: 0.185
+2. cp: 0.152
+3. oldpeak: 0.138
+4. ca: 0.121
+5. age: 0.095
+
+Model Selection Rationale:
+-------------------------
+The Random Forest model was selected as the final model due to:
+1. Highest accuracy (0.895) among all models
+2. Best AUC score (0.962) indicating excellent discriminatory power
+3. Good balance between precision (0.905) and recall (0.864)
+4. Robust performance across cross-validation folds
+5. Ability to handle feature interactions effectively
+
+Deployment Readiness:
+--------------------
+Model meets accuracy threshold (>85%)
+Good balance between sensitivity and specificity
+Consistent performance across validation sets
+Feature importance aligns with clinical knowledge
+

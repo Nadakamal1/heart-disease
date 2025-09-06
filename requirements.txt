@@ -1,0 +1,73 @@
+Core Data Science & Machine Learning
+------------------------------------------------------
+scikit-learn - Machine learning algorithms and utilities
+
+pandas - Data manipulation and analysis
+
+numpy - Numerical computing and array operations
+
+scipy - Scientific computing and advanced math functions
+
+Visualization
+------------------------------------------------------
+matplotlib - Basic plotting and visualization
+
+seaborn - Statistical data visualization
+
+plotly - Interactive visualizations (optional)
+
+Web Application
+------------------------------------------------------
+streamlit - Web UI framework for the application
+
+Model Management
+------------------------------------------------------
+joblib - Saving and loading trained models
+
+Development Environment
+------------------------------------------------------
+jupyter - Jupyter notebooks for development
+
+ipykernel - Jupyter kernel support
+
+ipywidgets - Interactive widgets in Jupyter (optional)
+
+Hyperparameter Optimization
+------------------------------------------------------
+optuna - Advanced hyperparameter tuning
+
+Visualization Enhancement 
+------------------------------------------------------
+yellowbrick - Machine learning visualization tools
+
+Deployment (Optional)
+ngrok - Creating public URLs for local apps
+
+pyngrok - Python wrapper for ngrok
+
+Utilities
+------------------------------------------------------
+tqdm - Progress bars for loops
+
+python-dotenv - Environment variable management
+
+Code Quality (Optional)
+black - Code formatting
+
+flake8 - Code linting
+
+isort - Import sorting
+
+Minimal Essential Requirements (Just the basics):
+------------------------------------------------------
+scikit-learn
+
+pandas
+
+numpy
+
+matplotlib
+
+streamlit
+
+joblib
