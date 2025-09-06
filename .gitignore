@@ -1,0 +1,32 @@
+# Python cache / bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode / PyCharm settings
+.vscode/
+.idea/
+
+# Data files
+data/*.csv
+!data/heart_disease_selected.csv   # keep only processed dataset
+
+# Models
+models/*.pkl
+!models/final_model.pkl   # keep final trained model
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
